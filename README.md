@@ -52,6 +52,7 @@ flowchart TD
 - **Knowledge base** — Upstash Vector
 - **Web search** — Tavily
 - **Evals** — Braintrust
+- **AI Assistant** — Claude Code (used during development)
 
 ---
 
@@ -96,6 +97,8 @@ npm run dev
 
 ---
 
-## License
+## Built With
 
-MIT
+This project was built with the help of [Claude Code](https://claude.ai/claude-code) — used for debugging, fixing rendering bugs in the Excalidraw integration, and iterating on the agent system prompt.
+
+---
