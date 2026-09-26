@@ -6,7 +6,7 @@ An AI-powered diagramming agent that draws on an Excalidraw canvas from natural 
 
 ## Demo
 
-<!-- Add your demo video here -->
+![demo](demo.gif)
 
 ---
 
@@ -52,7 +52,6 @@ flowchart TD
 - **Knowledge base** — Upstash Vector
 - **Web search** — Tavily
 - **Evals** — Braintrust
-- **AI Assistant** — Claude Code (used during development)
 
 ---
 
@@ -97,8 +96,20 @@ npm run dev
 
 ---
 
-## Built With
+## Knowledge Base
 
-This project was built with the help of [Claude Code](https://claude.ai/claude-code) — used for debugging, fixing rendering bugs in the Excalidraw integration, and iterating on the agent system prompt.
+The agent has a built-in RAG knowledge base (seeded via `npm run embed`) that gives it accurate reference material before drawing. Covered topics:
+
+| Topic | What it teaches the agent |
+|---|---|
+| Cloudflare Workers request lifecycle | Edge POP → isolate → Durable Object → KV/R2 → response |
+| Kubernetes pod networking | External LB → Ingress → kube-proxy → CNI → pod |
+| OAuth 2.0 Authorization Code + PKCE | Full redirect flow with verifier/challenge, token exchange |
+| PostgreSQL write path | Backend → shared buffers → WAL → background writer → checkpoint |
+| Startup org structure | Seed / Series A / Series B reporting hierarchies |
+| General diagram best practices | Layout, labeling, color, shape selection rules |
+
+When you ask it to draw any of these systems, it looks up the reference doc first and produces a structurally accurate diagram rather than guessing from memory.
 
 ---
+
