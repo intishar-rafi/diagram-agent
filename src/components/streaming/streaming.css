@@ -1,0 +1,71 @@
+.streaming-text {
+  white-space: pre-wrap;
+}
+
+.streaming-cursor {
+  animation: blink 0.8s infinite;
+  color: #2196f3;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.tool-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin: 4px 0;
+}
+
+.tool-status.running {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.tool-status.complete {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.tool-status.error {
+  background: #fce4ec;
+  color: #c62828;
+}
+
+.tool-icon {
+  font-size: 14px;
+}
+
+.tool-name {
+  font-weight: 500;
+}
+
+.tool-dots {
+  animation: dots 1.5s infinite;
+}
+
+@keyframes dots {
+  0% {
+    content: "";
+  }
+  33% {
+    content: ".";
+  }
+  66% {
+    content: "..";
+  }
+  100% {
+    content: "...";
+  }
+}

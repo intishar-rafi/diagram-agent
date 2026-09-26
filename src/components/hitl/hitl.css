@@ -1,0 +1,92 @@
+.confirmation-card {
+  background: #fff;
+  border: 1px solid #ff9800;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 8px 0;
+}
+
+.confirmation-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.confirmation-desc {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.confirmation-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-approve {
+  padding: 6px 16px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn-approve:hover {
+  background: #388e3c;
+}
+
+.btn-reject {
+  padding: 6px 16px;
+  background: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn-reject:hover {
+  background: #c62828;
+}
+
+.approval-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin: 4px 0;
+}
+
+.approval-status.pending {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.approval-status.approved {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.approval-status.rejected {
+  background: #fce4ec;
+  color: #c62828;
+}
+
+.approval-icon {
+  font-size: 14px;
+}
+
+.approval-action {
+  font-weight: 500;
+}
+
+.approval-label {
+  margin-left: auto;
+  font-size: 12px;
+}
